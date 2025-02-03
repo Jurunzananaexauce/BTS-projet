@@ -1,0 +1,238 @@
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+    header {
+        /* position: fixed; */
+        background-color: whitesmoke;
+        color: black;
+        padding:0px 15px 0px 35px;
+        width: 1310px;
+        height: 80px;
+        border-radius: 6px;
+    }
+    header h1{
+        color: #009DFF;
+        text-shadow: 2px 2px 4px #1683ff;
+        text-align: center;
+        float: left;
+        padding-left: 50px;
+        font-weight: bold;
+        transition: transform .5s;
+        
+    }
+    header h1:hover{
+        transform: scale(1.5);
+    }
+    header a {
+        text-align: center;
+        float: right;
+        justify-content: space-between;
+    }
+
+
+    span {
+        color: #1683ff;
+    }
+
+    img {
+        width: 30%;
+        height: 30%;
+        text-align: center;
+        float: right;
+        padding: 5%;
+        border-radius: 30%;
+    }
+    section {
+        margin: 30px 0px 0px 0px;
+        padding: 20px 0px 20px 0px;
+        width: 50%;
+        height: auto;
+        border-radius: 4px;
+        background-color: #e2e2e2;
+    }
+
+
+    section ul li {
+        list-style-type: none;
+        padding-left: 3rem;
+        
+        
+    }
+    .Le-systeme {
+        width: 100%;
+        height: 100%;
+        background: rgb(204,242,249);
+        background: linear-gradient(180deg, rgba(204,242,249,1) 35%, rgba(252,252,252,1) 100%);
+        border-radius: 8px;
+        margin-bottom: 5rem;
+    }
+
+    .Le-systeme h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding-left: 7rem;
+        color: #00302c;
+    }
+
+
+    .Fonction{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5rem;
+    } 
+
+    .Fonction h1 {
+        
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #001c15;
+        /* border-top: 4px solid #003629; */
+
+                
+    }
+
+    .Fonction .icon-box p {
+        font-family: 'Inter Tight', Helvetica, Arial, Lucida, sans-serif;
+        font-size: 22px;
+        color: #3593ff;
+        font-weight: bold;
+}
+
+    .Fonction .icon-box span {
+        font-size: 5rem; /* Taille de l'icône */
+        color: #797979; /* Couleur personnalisée */
+        margin-bottom: 5px; /* Espacement entre l'icône et le texte */
+        margin-top: 30px;
+}
+
+
+    .icon-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+
+    .icon-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    
+    .icon-box span {
+        font-size: 5rem; /* Taille de l'icône */
+        color: #003629; /* Couleur personnalisée */
+        margin-bottom: 5px; /* Espacement entre l'icône et le texte */
+        margin-top: 30px;
+    }
+    
+
+
+
+
+    section h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        /* padding-left: 3rem;    */
+        text-align: center;
+    }
+    section ul li p i {
+       width: 2rem;
+       height: 2rem; 
+       color: #1683ff;
+    }
+
+    section p {
+        padding-left: 1rem;
+    }
+    /* footer {
+        background-color: #353535;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } */
+    .btn {
+        background-color: #1683ff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block;
+        margin: 20px 10px;
+        text-align: center;
+        text-decoration: none;
+        width: 150px;
+        box-shadow: 0 8px 15px rgb(1, 48, 255);
+        transition: all 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #ffb300;
+        box-shadow: 0 12px 25px rgba(255, 123, 0, 0.7);
+        transition: perspective(600px) rotateX(10deg), rotateY(5deg);
+    }
+.client {
+    width: auto;
+    height: 20rem;
+    background-color: #b0b0b0;
+    border-radius: 8px;
+}
+
+.client .img {
+    width: 15%;
+    aspect-ratio: 3/4;
+}
+
+.client h1 {
+    text-align: center;
+}
+
+.client p {
+    text-align: center;
+}
+
+.membre {
+    float: right;
+    margin-right: 15rem;
+    text-align: center;
+    width: 50rem;
+    height: auto;
+    background-color: #002f38;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.btnn {
+    background-color: #ff8316;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    display: inline-block; /* change depuis Block a inline Block  */
+    margin: 20px 10px; /* adjuste l'espacement entre le bouton */
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    /* box-shadow: 0 8px 10px rgb(255, 141, 1);
+    transition: all 0.3s ease; */
+}
+
+    @media (max-width: 768px) {
+        header, footer {
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            padding: 10px;
+        }
+    }
+    
