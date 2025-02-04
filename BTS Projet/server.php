@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $_SESSION['username'] = $username;
-        header("Location: dashboard.php"); // Redirection après connexion réussie
+        header("Location: dashboard.html"); // Redirection après connexion réussie
         exit();
     } else {
         echo "<script>alert('Nom d\'utilisateur ou mot de passe incorrect'); window.location.href='connexion.html';</script>";

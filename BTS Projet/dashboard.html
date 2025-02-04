@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="btn">ACCUIEL  <i class="fa-solid fa-house"></i></a>
+        <a href="#" class="btnn" onclick="openPopup()">Ajouter<i class="fa-regular fa-right-to-bracket"></i></a>
+        <a href="#" class="btnn" onclick="openPopup()">Supprime<i class="fa-regular fa-right-to-bracket"></i></a>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+            <!-- <span class="close" onclick="closePopup()">&times;</span> -->
+            <h2 style="text-align: center; color: whitesmoke; font-family: Lato, serif;">AJOUTER UN PLUVIOMETRE</h2>
+            <form method="post" action="add.php">
+                <input type="text" name="username" placeholder="Nom du pluviometre" required>
+                <input type="number" name="id" placeholder="N° du Pluviometre" required>
+                <button type="submit">AJOUTER</button>
+            </form>
+            </div>
+        </div>
+
+        <script>
+            function openPopup() {
+            document.getElementById("popup").style.display = "block";
+            }
+
+            // function closePopup() {
+            // document.getElementById("popup").style.display = "none";
+            // }
+        </script>
+    </header>
+
+    <section class="date-time">
+        <input type="date" name="date"id="datePicker">
+        <input type="time" name="temps" id="timePicker">
+        <select name="pluviometre">
+            <option value="pluviometre">Sélectionnez un pluviomètre</option>
+            <!-- Les options seront remplies dynamiquement à partir de la base de données -->
+        </select>
+    </section>
+
+    <div class="tbl">
+        <table>
+            <tr>
+              <th>Pluviomètries</th>
+              <th>Temperature</th>
+              <th>Humidité</th>
+              <th>Batterie</th>
+            </tr>
+            <tr>
+              <td>Selection un pluviometre</td>
+              <td>Selection un pluviometre</td>
+              <td>Selection un pluviometre</td>
+              <td>Selection un pluviometre</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
